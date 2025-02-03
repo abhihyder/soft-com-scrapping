@@ -1,1 +1,4 @@
+.idea
+.vscode
+src/__pycache__
 *.xlsx
