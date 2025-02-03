@@ -1,0 +1,31 @@
+[project]
+name = "soft-com-scrapping"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Tofayel Hyder Abhi",email = "abhihyder7@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "selenium (>=4.28.1,<5.0.0)",
+    "gspread (>=6.1.4,<7.0.0)",
+    "google-auth (>=2.38.0,<3.0.0)",
+    "googletrans (>=4.0.2,<5.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)"
+]
+
+
+# Add this section
+[tool.poetry]
+packages = [
+    { include = "src" }
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "src.__init__:main"
+
